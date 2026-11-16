@@ -1,0 +1,110 @@
+/* TEMA — Torraccia di Chiusi
+   ===========================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   Il verde-bronzo dell'Ombra di San Gimignano per i fondi, il rame dei
+   coppi e dell'intonaco al tramonto per l'accento, avorio per la carta.
+   Newsreader per i titoli, Red Hat Text per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/newsreader-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/newsreader-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/newsreader-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/newsreader-latin-500-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/red-hat-text-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/red-hat-text-latin-500-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #1d2623;
+  --forest: #3f5249;
+  --deep: #243630;
+  --panel: #2f443c;
+  --panel-deep: #131c19;
+
+  --cream: #f4ecdc;
+  --paper: #fbf7ee;
+
+  --lime: #d98a4e;
+  --on-lime: #1d2623;
+
+  --line: rgba(29, 38, 35, 0.16);
+  --rule: #a98f6b;
+
+  --muted: #566159;
+  --muted-soft: #7c877e;
+
+  --hero-bg: #243630;
+  --story-bg: #1a2723;
+  --stays-bg: #f1e7d3;
+  --stays-bg-fade: rgba(241, 231, 211, 0);
+  --territory-bg: #e9dec6;
+  --forest-hover: #33463e;
+  --dock-panel: #f8f2e4;
+  --dock-bg: rgba(26, 39, 35, 0.94);
+
+  --shade-strong: rgba(15, 22, 19, 0.62);
+  --shade-soft: rgba(15, 22, 19, 0.45);
+  --hero-shade-bottom: rgba(15, 22, 19, 0.82);
+  --hero-shade-clear: rgba(15, 22, 19, 0.05);
+  --hero-shade-top: rgba(15, 22, 19, 0.5);
+
+  --exp-bg: #131c19;
+  --exp-intro-bg: #19241f;
+  --exp-kicker: #d98a4e;
+  --exp-accent: #efb98b;
+  --exp-on-accent: #1d2623;
+  --exp-card-1: #9a5a2c;
+  --exp-card-2: #3f6155;
+  --exp-card-3: #6e4a38;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Newsreader", Georgia, serif;
+  --font-body: "Red Hat Text", Arial, Helvetica, sans-serif;
+}

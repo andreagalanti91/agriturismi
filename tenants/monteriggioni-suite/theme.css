@@ -1,0 +1,118 @@
+/* TEMA — Monteriggioni Suite
+   ===========================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   Il verde cipresso e il blu della piscina per i fondi, il mattone e il cotto
+   della casa in pietra per l'accento, crema per la carta. Libre Baskerville per
+   i titoli, Albert Sans per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/libre-baskerville-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/libre-baskerville-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/libre-baskerville-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Libre Baskerville";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/libre-baskerville-latin-500-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/albert-sans-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Albert Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/albert-sans-latin-500-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #1d2623;
+  --forest: #3d544d;
+  --deep: #26352f;
+  --panel: #31443d;
+  --panel-deep: #141d1a;
+
+  --cream: #f4eee1;
+  --paper: #fbf8f1;
+
+  --lime: #d98a5b;
+  --on-lime: #1d2623;
+
+  --line: rgba(24, 28, 24, 0.16);
+  --rule: #a99a7e;
+
+  --muted: #5a6159;
+  --muted-soft: #7d8479;
+
+  --hero-bg: #26352f;
+  --story-bg: #1c2824;
+  --stays-bg: #f1e9d8;
+  --stays-bg-fade: rgba(241, 233, 216, 0);
+  --territory-bg: #e9e0c9;
+  --forest-hover: #32463f;
+  --dock-panel: #f8f3e8;
+  --dock-bg: rgba(28, 40, 36, 0.94);
+
+  --shade-strong: rgba(16, 22, 20, 0.62);
+  --shade-soft: rgba(16, 22, 20, 0.45);
+  --hero-shade-bottom: rgba(16, 22, 20, 0.82);
+  --hero-shade-clear: rgba(16, 22, 20, 0.05);
+  --hero-shade-top: rgba(16, 22, 20, 0.5);
+
+  --exp-bg: #131b18;
+  --exp-intro-bg: #18221f;
+  --exp-kicker: #e39a6b;
+  --exp-accent: #f0c09a;
+  --exp-on-accent: #1d2623;
+  --exp-card-1: #2f6e7a;
+  --exp-card-2: #6e7a52;
+  --exp-card-3: #9a5a3c;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Libre Baskerville", Georgia, serif;
+  --font-body: "Albert Sans", Arial, Helvetica, sans-serif;
+}
+
+/* Il Libre Baskerville è largo: su telefono "Monteriggioni." nel titolo
+   d'apertura usciva dal bordo dello schermo. */
+@media (max-width: 700px) {
+  :root .hero h1 {
+    font-size: clamp(38px, 11.5vw, 60px);
+  }
+}
