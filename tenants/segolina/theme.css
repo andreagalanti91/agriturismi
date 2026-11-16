@@ -1,0 +1,108 @@
+/* TEMA — Agriturismo La Segolina
+   ===============================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   Mattoni e pietra del podere dell'Ottocento: terracotta per l'accento, verde-bruno della quercia per i fondi, calce per la carta. Fraunces per i titoli, DM Sans per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/fraunces-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/fraunces-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/fraunces-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/fraunces-latin-500-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/dm-sans-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/dm-sans-latin-500-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #2a241d;
+  --forest: #4d5139;
+  --deep: #2f2f22;
+  --panel: #3b3a2b;
+  --panel-deep: #1c1b13;
+
+  --cream: #f6efe4;
+  --paper: #fcf8f1;
+
+  --lime: #d9835a;
+  --on-lime: #2a1a10;
+
+  --line: rgba(30, 24, 20, 0.16);
+  --rule: #b19a7e;
+
+  --muted: #655d52;
+  --muted-soft: #8a8174;
+
+  --hero-bg: #2f2f22;
+  --story-bg: #25241a;
+  --stays-bg: #f2e8d8;
+  --stays-bg-fade: rgba(242, 232, 216, 0);
+  --territory-bg: #ebdcc4;
+  --forest-hover: #3f422e;
+  --dock-panel: #faf3e8;
+  --dock-bg: rgba(37, 36, 26, 0.94);
+
+  --shade-strong: rgba(24, 22, 14, 0.62);
+  --shade-soft: rgba(24, 22, 14, 0.45);
+  --hero-shade-bottom: rgba(24, 22, 14, 0.82);
+  --hero-shade-clear: rgba(24, 22, 14, 0.05);
+  --hero-shade-top: rgba(24, 22, 14, 0.5);
+
+  --exp-bg: #1a1912;
+  --exp-intro-bg: #201f16;
+  --exp-kicker: #e39a72;
+  --exp-accent: #f0bf9f;
+  --exp-on-accent: #2a241d;
+  --exp-card-1: #9a4f32;
+  --exp-card-2: #55603f;
+  --exp-card-3: #6e5a3a;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "DM Sans", Arial, Helvetica, sans-serif;
+}

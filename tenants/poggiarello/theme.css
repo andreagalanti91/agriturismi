@@ -1,0 +1,107 @@
+/* TEMA — Antico Borgo Poggiarello
+   ================================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   Il borgo del Seicento in pietra e cotto: terracotta calda per l'accento, marrone bruno dei travi per i fondi, avorio per la carta. Crimson Pro per i titoli, Mulish per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/crimson-pro-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/crimson-pro-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/crimson-pro-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Crimson Pro";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/crimson-pro-latin-500-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/mulish-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/mulish-latin-500-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #2a2019;
+  --forest: #55453a;
+  --deep: #342820;
+  --panel: #43342a;
+  --panel-deep: #1c140f;
+
+  --cream: #f6eee2;
+  --paper: #fcf8f1;
+
+  --lime: #d98c55;
+  --on-lime: #2a2019;
+
+  --line: rgba(42, 32, 25, 0.16);
+  --rule: #b39880;
+
+  --muted: #67584c;
+  --muted-soft: #8a7a6c;
+
+  --hero-bg: #342820;
+  --story-bg: #251a14;
+  --stays-bg: #f3e8d8;
+  --stays-bg-fade: rgba(243, 232, 216, 0);
+  --territory-bg: #ecdcc6;
+  --forest-hover: #46372c;
+  --dock-panel: #faf3e8;
+  --dock-bg: rgba(37, 26, 20, 0.94);
+
+  --shade-strong: rgba(28, 20, 15, 0.62);
+  --shade-soft: rgba(28, 20, 15, 0.45);
+  --hero-shade-bottom: rgba(28, 20, 15, 0.82);
+  --hero-shade-clear: rgba(28, 20, 15, 0.05);
+  --hero-shade-top: rgba(28, 20, 15, 0.5);
+
+  --exp-bg: #1b130e;
+  --exp-intro-bg: #21170f;
+  --exp-kicker: #e39a63;
+  --exp-accent: #efb98c;
+  --exp-on-accent: #2a2019;
+  --exp-card-1: #9a5a30;
+  --exp-card-2: #5d5038;
+  --exp-card-3: #7a3f35;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Crimson Pro", Georgia, serif;
+  --font-body: "Mulish", Arial, Helvetica, sans-serif;
+}
