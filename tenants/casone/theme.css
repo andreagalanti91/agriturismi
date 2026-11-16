@@ -1,0 +1,107 @@
+/* TEMA — Fattoria Il Casone
+   ===========================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   La villa gialla del Quattrocento: ocra degli intonaci per l'accento, salvia scura per i fondi, crema per la carta. EB Garamond per i titoli, Jost per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/eb-garamond-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/eb-garamond-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/eb-garamond-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/eb-garamond-latin-500-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/jost-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/jost-latin-500-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #23251f;
+  --forest: #47503f;
+  --deep: #2c3228;
+  --panel: #363d31;
+  --panel-deep: #181c15;
+
+  --cream: #f5efdf;
+  --paper: #fcf9f0;
+
+  --lime: #e3b754;
+  --on-lime: #23251f;
+
+  --line: rgba(30, 24, 20, 0.16);
+  --rule: #a99a6b;
+
+  --muted: #5f6155;
+  --muted-soft: #828374;
+
+  --hero-bg: #2c3228;
+  --story-bg: #20251c;
+  --stays-bg: #f3ebd6;
+  --stays-bg-fade: rgba(243, 235, 214, 0);
+  --territory-bg: #ece3c8;
+  --forest-hover: #3a4233;
+  --dock-panel: #f9f4e7;
+  --dock-bg: rgba(32, 37, 28, 0.94);
+
+  --shade-strong: rgba(20, 22, 16, 0.62);
+  --shade-soft: rgba(20, 22, 16, 0.45);
+  --hero-shade-bottom: rgba(20, 22, 16, 0.82);
+  --hero-shade-clear: rgba(20, 22, 16, 0.05);
+  --hero-shade-top: rgba(20, 22, 16, 0.5);
+
+  --exp-bg: #171a13;
+  --exp-intro-bg: #1c2017;
+  --exp-kicker: #e3b754;
+  --exp-accent: #f0d28a;
+  --exp-on-accent: #23251f;
+  --exp-card-1: #8c6a2a;
+  --exp-card-2: #4e5a40;
+  --exp-card-3: #7a4e36;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "EB Garamond", Georgia, serif;
+  --font-body: "Jost", Arial, Helvetica, sans-serif;
+}

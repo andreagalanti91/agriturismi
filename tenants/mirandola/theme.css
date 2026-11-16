@@ -1,0 +1,107 @@
+/* TEMA — Agriturismo La Mirandola
+   =================================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   Campagna di Volterra: verde degli ulivi per i fondi, cotto per l'accento, avorio per la carta. Lora per i titoli, Nunito Sans per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/lora-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/lora-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/lora-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/lora-latin-500-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/nunito-sans-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/nunito-sans-latin-700-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #1f251b;
+  --forest: #3d4a2f;
+  --deep: #25301d;
+  --panel: #2f3a25;
+  --panel-deep: #151c10;
+
+  --cream: #f1ede1;
+  --paper: #faf8f1;
+
+  --lime: #d08a5b;
+  --on-lime: #1f251b;
+
+  --line: rgba(30, 24, 20, 0.16);
+  --rule: #8f9a74;
+
+  --muted: #5a6150;
+  --muted-soft: #7c836f;
+
+  --hero-bg: #25301d;
+  --story-bg: #1b2414;
+  --stays-bg: #eeeadb;
+  --stays-bg-fade: rgba(238, 234, 219, 0);
+  --territory-bg: #e3e2cc;
+  --forest-hover: #334028;
+  --dock-panel: #f6f3ea;
+  --dock-bg: rgba(27, 36, 20, 0.94);
+
+  --shade-strong: rgba(16, 22, 12, 0.62);
+  --shade-soft: rgba(16, 22, 12, 0.45);
+  --hero-shade-bottom: rgba(16, 22, 12, 0.82);
+  --hero-shade-clear: rgba(16, 22, 12, 0.05);
+  --hero-shade-top: rgba(16, 22, 12, 0.5);
+
+  --exp-bg: #141a0f;
+  --exp-intro-bg: #192013;
+  --exp-kicker: #d08a5b;
+  --exp-accent: #e8b48c;
+  --exp-on-accent: #1f251b;
+  --exp-card-1: #8a4a2d;
+  --exp-card-2: #4a5a35;
+  --exp-card-3: #6b5a2e;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Lora", Georgia, serif;
+  --font-body: "Nunito Sans", Arial, Helvetica, sans-serif;
+}

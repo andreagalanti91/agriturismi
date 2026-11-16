@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Il Piccolo Castello">
+  <defs><clipPath id="c"><circle cx="60" cy="60" r="50"/></clipPath></defs>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#F1DDBC" stroke-width="2.5"/>
+  <g clip-path="url(#c)" fill="#F1DDBC">
+    <path d="M22 92V62h7v-6h6v6h6v-6h6v6h4V44h4v-6h5v6h4v-6h5v6h4v18h4v-6h6v6h6v-6h6v6h7v30z"/>
+    <rect x="56" y="70" width="8" height="12" rx="4" fill="#000" fill-opacity=".35"/>
+    <path d="M4 96c20-6 40-8 56-8s36 2 56 8v24H4z"/>
+  </g>
+</svg>

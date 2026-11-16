@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="La Mirandola">
+  <defs><clipPath id="c"><circle cx="60" cy="60" r="50"/></clipPath></defs>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#F1DDBC" stroke-width="2.5"/>
+  <g clip-path="url(#c)" fill="#F1DDBC">
+    <path d="M28 82c12-20 28-34 50-44" fill="none" stroke="#F1DDBC" stroke-width="2.6" stroke-linecap="round"/>
+    <ellipse cx="40" cy="64" rx="10" ry="4" transform="rotate(-50 40 64)"/>
+    <ellipse cx="50" cy="56" rx="10" ry="4" transform="rotate(-20 50 56)"/>
+    <ellipse cx="56" cy="47" rx="10" ry="4" transform="rotate(-55 56 47)"/>
+    <ellipse cx="66" cy="45" rx="10" ry="4" transform="rotate(-15 66 45)"/>
+    <ellipse cx="70" cy="36" rx="9" ry="3.6" transform="rotate(-50 70 36)"/>
+    <circle cx="46" cy="70" r="4"/><circle cx="61" cy="57" r="4"/>
+    <path d="M4 94c22-10 44-12 60-9s34 8 52 4v31H4z"/>
+  </g>
+</svg>

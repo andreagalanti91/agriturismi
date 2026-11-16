@@ -1,0 +1,56 @@
+# Pubblica le anteprime di tutti i clienti su GitHub Pages a ogni push su main.
+#
+#   https://<utente>.github.io/<repository>/            elenco dei clienti
+#   https://<utente>.github.io/<repository>/<cliente>/  un sito
+#
+# Ogni cliente di tenants/ viene compilato come anteprima: nella sua
+# sottocartella e non indicizzato dai motori di ricerca (NOINDEX). Il sito
+# definitivo di un cliente si compila a parte, sul suo dominio:
+#   SITE_ID=<cliente> SITE_URL=https://dominio-del-cliente.it npm run build:static
+#
+# Prima volta: Settings → Pages → Source: "GitHub Actions".
+name: Pubblica le anteprime su GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run validate
+      - name: Compila tutti i clienti
+        run: npm run build:pages
+        env:
+          DEMO_ORIGIN: https://${{ github.repository_owner }}.github.io
+          DEMO_PATH: /${{ github.event.repository.name }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/demo
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,115 @@
+/* TEMA — Hotel Il Piccolo Castello
+   ==================================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   Neoclassico senese: rosso delle Terre di Siena per i fondi, oro per l'accento, crema per la carta. Playfair Display per i titoli, Lato per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/playfair-display-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/playfair-display-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/playfair-display-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/playfair-display-latin-500-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/lato-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/lato-latin-700-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #2b1a17;
+  --forest: #5c2420;
+  --deep: #3a1714;
+  --panel: #46201b;
+  --panel-deep: #200d0b;
+
+  --cream: #f4ece0;
+  --paper: #fbf7f1;
+
+  --lime: #c9a45c;
+  --on-lime: #2b1a17;
+
+  --line: rgba(30, 24, 20, 0.16);
+  --rule: #b38b5d;
+
+  --muted: #6b5750;
+  --muted-soft: #8c766d;
+
+  --hero-bg: #3a1714;
+  --story-bg: #2a110f;
+  --stays-bg: #f1e7d9;
+  --stays-bg-fade: rgba(241, 231, 217, 0);
+  --territory-bg: #ebdfcc;
+  --forest-hover: #4b1c18;
+  --dock-panel: #f8f1e7;
+  --dock-bg: rgba(45, 18, 15, 0.94);
+
+  --shade-strong: rgba(32, 12, 10, 0.62);
+  --shade-soft: rgba(32, 12, 10, 0.45);
+  --hero-shade-bottom: rgba(32, 12, 10, 0.82);
+  --hero-shade-clear: rgba(32, 12, 10, 0.05);
+  --hero-shade-top: rgba(32, 12, 10, 0.5);
+
+  --exp-bg: #1d0e0c;
+  --exp-intro-bg: #24110e;
+  --exp-kicker: #c9a45c;
+  --exp-accent: #e2c58b;
+  --exp-on-accent: #2b1a17;
+  --exp-card-1: #7a2c25;
+  --exp-card-2: #4e5638;
+  --exp-card-3: #6b4a2e;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Lato", Arial, Helvetica, sans-serif;
+}
+
+/* Il Playfair è più largo dei serif degli altri clienti: su telefono
+   "Monteriggioni." nel titolo d'apertura toccava il bordo dello schermo. */
+@media (max-width: 700px) {
+  :root .hero h1 {
+    font-size: clamp(42px, 13vw, 64px);
+  }
+}
