@@ -25,10 +25,16 @@ import segolina from "../../tenants/segolina/site";
 import poggiarello from "../../tenants/poggiarello/site";
 import villaLecchi from "../../tenants/villa-lecchi/site";
 import saletta from "../../tenants/saletta/site";
+import monteriggioniSuite from "../../tenants/monteriggioni-suite/site";
+import torraccia from "../../tenants/torraccia/site";
+import girasoli from "../../tenants/girasoli/site";
 
 /* Per aggiungere un cliente: importalo qui sopra e aggiungi una riga.
    Vedi docs/NUOVO-CLIENTE.md per la procedura completa. */
 const REGISTRY: Record<string, SiteConfig> = {
+  girasoli: girasoli,
+  "monteriggioni-suite": monteriggioniSuite,
+  torraccia: torraccia,
   saletta: saletta,
   "villa-lecchi": villaLecchi,
   poggiarello: poggiarello,

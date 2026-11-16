@@ -1,0 +1,84 @@
+/* TEMA — Borgo Villa Certano
+   ===========================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   La villa color burro con la torre dell'orologio, i cipressi del viale e i terrecotte dei pavimenti: verde cipresso per i fondi, burro e crema per la carta, albicocca per l'accento. Marcellus per i titoli, Hanken Grotesk per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Marcellus";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/marcellus-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/hanken-grotesk-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/hanken-grotesk-latin-500-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #1f2623;
+  --forest: #3d5148;
+  --deep: #2b3a33;
+  --panel: #34463d;
+  --panel-deep: #141c18;
+
+  --cream: #f4ecd9;
+  --paper: #fcf8ee;
+
+  --lime: #e6b178;
+  --on-lime: #231a12;
+
+  --line: rgba(31, 38, 35, 0.16);
+  --rule: #b19c72;
+
+  --muted: #596058;
+  --muted-soft: #7e8479;
+
+  --hero-bg: #2b3a33;
+  --story-bg: #1d2924;
+  --stays-bg: #f2e8cf;
+  --stays-bg-fade: rgba(242, 232, 207, 0);
+  --territory-bg: #ebe0c1;
+  --forest-hover: #324239;
+  --dock-panel: #faf4e4;
+  --dock-bg: rgba(29, 41, 36, 0.94);
+
+  --shade-strong: rgba(18, 24, 21, 0.62);
+  --shade-soft: rgba(18, 24, 21, 0.45);
+  --hero-shade-bottom: rgba(18, 24, 21, 0.82);
+  --hero-shade-clear: rgba(18, 24, 21, 0.05);
+  --hero-shade-top: rgba(18, 24, 21, 0.5);
+
+  --exp-bg: #121a16;
+  --exp-intro-bg: #18221d;
+  --exp-kicker: #e6b178;
+  --exp-accent: #f1cba0;
+  --exp-on-accent: #231a12;
+  --exp-card-1: #9a4f2e;
+  --exp-card-2: #44614f;
+  --exp-card-3: #7c6330;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Marcellus", Georgia, serif;
+  --font-body: "Hanken Grotesk", Arial, Helvetica, sans-serif;
+}

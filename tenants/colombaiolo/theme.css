@@ -1,0 +1,107 @@
+/* TEMA — Agriturismo Colombaiolo
+   ===============================
+   Sovrascrive i valori di partenza definiti in src/styles/tokens.css.
+   Viene caricato dopo, quindi vince.
+
+   Il verde argentato dell'oliveta e il cotto dei pavimenti: verde pino scuro per i fondi, terracotta per l'accento, un'ombra di turchese piscina nelle sezioni chiare. Gelasio per i titoli, Source Sans 3 per il testo.
+
+   I font sono ospitati insieme al sito (cartella fonts/ qui accanto), non
+   caricati da Google Fonts. Licenza SIL OFL, vedi fonts/OFL-*.txt. */
+
+@font-face {
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/gelasio-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gelasio";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/gelasio-latin-400-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gelasio";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/gelasio-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gelasio";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/gelasio-latin-500-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/source-sans-3-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/source-sans-3-latin-500-normal.woff2") format("woff2");
+}
+
+:root {
+  /* --- Colori ------------------------------------------------------ */
+
+  --ink: #1f2a24;
+  --forest: #3e5146;
+  --deep: #24332b;
+  --panel: #2e3f35;
+  --panel-deep: #15201a;
+
+  --cream: #f4eee2;
+  --paper: #fbf8f1;
+
+  --lime: #d98b5f;
+  --on-lime: #1f2a24;
+
+  --line: rgba(25, 32, 28, 0.16);
+  --rule: #a9a27f;
+
+  --muted: #58625a;
+  --muted-soft: #7e877d;
+
+  --hero-bg: #24332b;
+  --story-bg: #1b2820;
+  --stays-bg: #ece8d8;
+  --stays-bg-fade: rgba(236, 232, 216, 0);
+  --territory-bg: #e3e6d6;
+  --forest-hover: #33463b;
+  --dock-panel: #f7f3e8;
+  --dock-bg: rgba(27, 40, 32, 0.94);
+
+  --shade-strong: rgba(16, 24, 19, 0.62);
+  --shade-soft: rgba(16, 24, 19, 0.45);
+  --hero-shade-bottom: rgba(16, 24, 19, 0.82);
+  --hero-shade-clear: rgba(16, 24, 19, 0.05);
+  --hero-shade-top: rgba(16, 24, 19, 0.5);
+
+  --exp-bg: #131c17;
+  --exp-intro-bg: #19251e;
+  --exp-kicker: #e39a70;
+  --exp-accent: #efb48f;
+  --exp-on-accent: #1f2a24;
+  --exp-card-1: #2f7a86;
+  --exp-card-2: #6c7a45;
+  --exp-card-3: #a4573a;
+
+  /* --- Tipografia -------------------------------------------------- */
+
+  --font-display: "Gelasio", Georgia, serif;
+  --font-body: "Source Sans 3", Arial, Helvetica, sans-serif;
+}

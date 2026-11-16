@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Torraccia di Chiusi">
+  <defs><clipPath id="c"><circle cx="60" cy="60" r="50"/></clipPath></defs>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#F1DDBC" stroke-width="2.5"/>
+  <g clip-path="url(#c)" fill="#F1DDBC">
+    <path d="M46 92V44h28v48z"/>
+    <path d="M44 44V36h5v4h4v-4h5v4h4v-4h5v4h4v-4h5v8z"/>
+    <path d="M56 48h8v14h-8z" fill="#000" fill-opacity=".35"/>
+    <path d="M55 92V76a5 5 0 0 1 10 0v16z" fill="#000" fill-opacity=".35"/>
+    <path d="M4 90c14-8 26-8 42-2h28c14-6 26-6 42-2v34H4z"/>
+    <path d="M92 90c-5-7-5-20 0-30 5 10 5 23 0 30z" fill="#F1DDBC"/>
+  </g>
+</svg>
