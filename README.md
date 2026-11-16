@@ -10,7 +10,6 @@ Non indicizzate dai motori di ricerca.
 
 | Cliente | Indirizzo |
 |---|---|
-| Indice | https://andreagalanti91.github.io/agriturismi/ |
 | Fattoria Nerbona | https://andreagalanti91.github.io/agriturismi/nerbona/ |
 | Hotel Il Piccolo Castello | https://andreagalanti91.github.io/agriturismi/piccolo-castello/ |
 | Agriturismo La Mirandola | https://andreagalanti91.github.io/agriturismi/mirandola/ |

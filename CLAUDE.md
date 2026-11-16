@@ -5,9 +5,9 @@ sorgente, un sito per cliente, tutti con la stessa struttura. Per un nuovo
 cliente cambiano testi, foto, colori, font e logo, non il codice.
 
 Ogni push su `main` ricompila **tutti** i clienti e li pubblica su GitHub
-Pages (`.github/workflows/pages.yml`), ognuno al suo indirizzo:
+Pages (`.github/workflows/pages.yml`), ognuno al suo indirizzo. L'indirizzo
+radice è una pagina vuota: nessun cliente deve vedere le anteprime degli altri.
 
-    https://andreagalanti91.github.io/agriturismi/            indice
     https://andreagalanti91.github.io/agriturismi/<id>/       un cliente
 
 Quello che finisce su `main` va online. Le anteprime sono `noindex`: i motori
