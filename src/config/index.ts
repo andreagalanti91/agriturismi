@@ -24,10 +24,12 @@ import lornano from "../../tenants/lornano/site";
 import segolina from "../../tenants/segolina/site";
 import poggiarello from "../../tenants/poggiarello/site";
 import villaLecchi from "../../tenants/villa-lecchi/site";
+import saletta from "../../tenants/saletta/site";
 
 /* Per aggiungere un cliente: importalo qui sopra e aggiungi una riga.
    Vedi docs/NUOVO-CLIENTE.md per la procedura completa. */
 const REGISTRY: Record<string, SiteConfig> = {
+  saletta: saletta,
   "villa-lecchi": villaLecchi,
   poggiarello: poggiarello,
   segolina: segolina,

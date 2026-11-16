@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Agriturismo Saletta">
+  <defs><clipPath id="c"><circle cx="60" cy="60" r="50"/></clipPath></defs>
+  <circle cx="60" cy="60" r="56" fill="none" stroke="#F1DDBC" stroke-width="2.5"/>
+  <g clip-path="url(#c)" fill="#F1DDBC">
+    <circle cx="86" cy="38" r="9"/>
+    <path d="M40 92C30 76 30 44 40 20c10 24 10 56 0 72z"/>
+    <path d="M62 92C55 80 55 58 62 40c7 18 7 40 0 52z"/>
+    <path d="M4 94c22-10 50-14 112-2v28H4z"/>
+    <path d="M4 100c34-6 78-6 112 0" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="1.5"/>
+  </g>
+</svg>
